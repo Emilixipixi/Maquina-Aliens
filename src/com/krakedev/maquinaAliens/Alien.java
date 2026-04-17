@@ -1,5 +1,7 @@
 package com.krakedev.maquinaAliens;
 
+
+
 public class Alien {
 
 	private int tamanio;
@@ -11,8 +13,6 @@ public class Alien {
 	private double precioOjo;
 	private double precioCuerpo;
 
-	private static final int TAMANIO_MINIMO = 5;
-	private static final int TAMANIO_MAXIMO = 30;
 
 	public Alien(int tamanio, String color) {
 
@@ -30,4 +30,56 @@ public class Alien {
 		this.precioExtremidad = this.tamanio * 0.10;
 		this.precioOjo = this.tamanio * 0.05;
 	}
+
+
+	public int getTamanio() {
+		return tamanio;
+	}
+
+
+	public String getColor() {
+		return color;
+	}
+
+
+	public int getNumeroOjos() {
+		return numeroOjos;
+	}
+
+
+	public int getNumeroBrazos() {
+		return numeroBrazos;
+	}
+
+
+	public int getNumeroPies() {
+		return numeroPies;
+	}
+
+
+	public double getPrecioExtremidad() {
+		return precioExtremidad;
+	}
+
+
+	public double getPrecioOjo() {
+		return precioOjo;
+	}
+
+
+	public double getPrecioCuerpo() {
+		return precioCuerpo;
+	}
+	
+	public void imprimir() {
+		
+		
+		System.out.println("Tamaño: "+ this.tamanio);
+		System.out.println("Color: "+this.color);
+		System.out.println("Numero de ojos: "+this.numeroOjos);
+		System.out.println("Numero de brazos: "+this.numeroBrazos);
+		System.out.println("Numero de pies: "+this.numeroPies);
+		
+	}
+	
 }
